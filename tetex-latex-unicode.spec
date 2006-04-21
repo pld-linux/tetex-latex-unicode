@@ -5,7 +5,7 @@
 %define	texhash		[ ! -x %{_bindir}/texhash ] || %{_bindir}/texhash 1>&2 ;
 
 Summary:	Extended UTF-8 input encoding for LaTeX
-#Summary(pl):	
+Summary(pl):	Rozszerzone kodowanie wej¶ciowe UTF-8 dla LaTeXa
 Name:		tetex-latex-%{short_name}
 Version:	1.0.0
 Release:	1
@@ -27,11 +27,13 @@ range of Unicode characters than does utf8.def in the LaTeX
 distribution. The ucs package provides facilities for efficient use of
 large sets of Unicode characters.
 
-#%description -l pl
-#Ta paczka dostarcza pakietów ucs oraz utf8x.def, razem z du¿± liczb±
-#plików pomocniczych.
-#
-#Plik definicji utf8x.def 
+%description -l pl
+Ten pakiet dostarcza pakietów ucs oraz utf8x.def, razem z du¿± liczb±
+plików pomocniczych.
+
+Plik definicji utf8x.def do u¿ywania z inputenc pokrywa szerszy zakres
+znaków Unicode ni¿ utf8.def w dystrybucji LaTeXa. Pakiet ucs u³atwia
+sprawne korzystanie z du¿ych zbiorów znaków Unicode.
 
 %prep
 %setup -q -n %{short_name}
