@@ -21,7 +21,7 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 This bundle provides the ucs package, and utf8x.def, together with a
 large number of support files.
-    
+
 The utf8x.def definition file for use with inputenc covers a wider
 range of Unicode characters than does utf8.def in the LaTeX
 distribution. The ucs package provides facilities for efficient use of
@@ -43,7 +43,7 @@ rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT%{_datadir}/texmf/tex/latex/%{short_name}
 
 install ucs.sty ucsencs.def utf8x.def $RPM_BUILD_ROOT%{_datadir}/texmf/tex/latex/%{short_name}
-cp -ar data $RPM_BUILD_ROOT%{_datadir}/texmf/tex/latex/%{short_name}
+cp -a data $RPM_BUILD_ROOT%{_datadir}/texmf/tex/latex/%{short_name}
 
 %clean
 rm -rf $RPM_BUILD_ROOT
