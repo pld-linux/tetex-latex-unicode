@@ -5,7 +5,7 @@
 %define	texhash		[ ! -x %{_bindir}/texhash ] || %{_bindir}/texhash 1>&2 ;
 
 Summary:	Extended UTF-8 input encoding for LaTeX
-Summary(pl.UTF-8):   Rozszerzone kodowanie wejściowe UTF-8 dla LaTeXa
+Summary(pl.UTF-8):	Rozszerzone kodowanie wejściowe UTF-8 dla LaTeXa
 Name:		tetex-latex-%{short_name}
 Version:	1.0.0
 Release:	1
